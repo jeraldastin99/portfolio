@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap" rel="stylesheet"/>
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav id="navbar-site" class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+      <div class="container"> 
+        <div class = "col-5">
+          <div class="row">
+            <div class = "col-4 col-md-2 col-lg-1">
+              <i class="fa fa-terminal fa-2x text-danger"></i>
+            </div>
+            <div class = "col-8 col-md-10 col-lg-11">
+              <a href="#" class="navbar-brand d-inline pl-1 text-white ">D.J.Astin</a>
+            </div>
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#myTogglerNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myTogglerNav">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link text-white px-4" href="#">Home</a>
+            <a class="nav-item nav-link text-white px-4" href="#about">About</a>
+            <a class="nav-item nav-link text-white px-4" href="#projects">Projects</a>
+            <a class="nav-item nav-link text-white px-4" href="#social-media">Social Media</a>
+            <a  target="_blank" class="nav-item nav-link text-white px-4"
+             data-toggle="modal" data-target="#exampleModalCenter">Resume</a>
+          </div><!-- navbar -->      
+        </div><!-- collapse -->
+      </div><!-- container -->
+    </nav><!-- nav -->
+
+        <!-- Main Container -->
+    <div class ="mt-5" >
+      <div class="main-container container">
+        <div class="row main_row">
+          <div class="col-5 col-md-6">
+            <h2 class="text-white">Hello, I'm</h2>
+            <h1 class="text-danger m-heading">Jerald Astin</h1>
+            <h2 class="text-white">IT Undergraduate</h2>
+          </div>
+          <div class="col-7 col-md-6 pl-5">
+            <img src="images/boy.svg"class="img-fluid"/>
+          </div>
+        </div>
+      </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Resume</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src = "images/res.png" width = "100%" height = "100%">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          <!-- About Section -->
+      <div id="about" class="container about">
+        <div class="row">
+          <div class="col-12 col-lg-5" style = "padding-top:10vh;">
+            <img src="images/me.png" width="105%">
+          </div>
+          <div class="col-12 col-lg-7 pt-5 pb-5 text-white">
+            <h3 class="text-danger">About Me</h3>
+            <h1 class="m-heading">A little bit about me</h1>
+            <p>
+              Hi! I'm Jerald Astin. I am a final year undergraduate pursuing my
+              <b class="text-danger">B.Tech.Information technology in S.A.Engineering College</b>
+              which is located in Chennai, India. I'm currently working on <b class="text-danger">front-end projects</b>
+              which is done using <b class="text-danger">HTML, CSS, JS and Bootstrap</b>. I always wanted to become a Web Developer
+              and I'm pursuing my path towards it.   
+            </p>
+            <br />
+            <p>
+              In here I'll post about my projects and along with it I'll 
+              provide my source code.Check out my Github for source codes.
+              Feel free to clone my projects and tweak it as you wish. 
+            </p>
+            <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div id="projects" class="container mt-5 pt-5">
+        <h1 class="text-danger mb-3 pb-2">My Projects</h1>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-5 ml-0">
+            <div class="card" style="width: 18rem; height: 30rem;">
+              <img src="images/clock.svg" class="card-img-top" style="height: 13rem;" alt="..."/>
+              <div class="card-body">
+                <h5 class="card-title">Analog Clock</h5>
+                <p class="card-text">
+                  This is my first project using javascript. I made a simple Analog Clock to check the time
+                  in your place.
+                </p>
+                <a target="_blank"  href="https://jeraldastin.github.io/Analog-Clock/" class="btn btn-danger">See Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card" style="width: 18rem; height: 30rem;">
+              <img src="images/keyboard.svg" class="card-img-top img-fluid" alt="..." style="height: 13rem;"/>
+              <div class="card-body">
+                <h5 class="card-title">Type Speed Tester</h5>
+                <p class="card-text">
+                  This web app made is made using HTML, CSS and Js. Here you can check 
+                  how fast you can type and evaluate yourself or play as a game between your friends.
+                </p>
+                <a target="_blank" href="https://jeraldastin.github.io/Typing-Speed-Tester/" class="btn btn-danger">See Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card" style="width: 18rem; height: 30rem;">
+              <img
+                src="images/coffee.svg"
+                class="card-img-top"
+                alt="..."
+                style="height: 13rem;"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Coffee bean selling site</h5>
+                <p class="card-text">
+                  This is a complete front-end site site made using HTML, CSS and Js for selling coffee bean.
+                  Wanna start up a site and struggling? Use this as an idea and help yourself! 
+                </p>
+                <a target="_blank" href="https://jeraldastin.github.io/a-coffeebean-website/" class="btn btn-danger">See Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card" style="width: 18rem; height: 30rem;">
+              <img src="images/music.svg" class="card-img-top" alt="..." style="height: 13rem;"/>
+              <div class="card-body">
+                <h5 class="card-title">Youtube Downloader</h5>
+                <p class="card-text">
+                  Coming Soon!
+                </p>
+                <a href="#" class="btn btn-danger disabled">See Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card" style="width: 18rem; height: 30rem;">
+              <img src="images/music.svg" class="card-img-top" alt="..." style="height: 13rem;"/>
+              <div class="card-body">
+                <h5 class="card-title">Audio Convertor</h5>
+                <p class="card-text">
+                  Coming Soon!
+                </p>
+                <a href="#" class="btn btn-danger disabled">See Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card" style="width: 18rem; height: 30rem;">
+              <img src="images/music.svg" class="card-img-top" alt="..." style="height: 13rem;"/>
+              <div class="card-body">
+                <h5 class="card-title">Website Blocker</h5>
+                <p class="card-text">
+                  Coming Soon!
+                </p>
+                <a href="#" class="btn btn-danger disabled">See Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div id="social-media" class="container-fluid">
+        <div class="container text-white py-5">
+          <h4 class="text-danger">Social Media</h4>
+          <h1 class="m-heading">Let's be friends!</h1>
+          <div class="row pt-5">
+            <div class="col-12 col-md-6 col-lg-3 mb-5 maill media_link btn">
+              <div class ="clip" data-clipboard-text="jeraldastin99@gmail.com">
+                <div class="row">
+                  <div class="col-6 d-flex justify-content-start">
+                    <h3 class="m-0 pt-2 text-dark">Email</h3>
+                  </div>
+                  <div class="col-6 d-flex justify-content-end align-items-center">
+                    <i class="fas fa-envelope fa-2x text-secondary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="col-12 col-md-6 col-lg-3 mb-5 media_link btn" target="_blank" href="https://www.linkedin.com/in/jerald-astin-d-7047b0156/">
+              <div class="row">
+                <div class="col-6 d-flex justify-content-start">
+                  <h3 class="m-0 pt-2 text-white">LinkedIn</h3>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                  <i class="fab fa-linkedin-in fa-2x text-secondary"></i>
+                </div>
+              </div>
+            </a>
+            <a class="col-12 col-md-6 col-lg-3 mb-5 media_link btn" target="_blank" href="https://github.com/jeraldastin">
+              <div class="row">
+                <div class="col-6 d-flex justify-content-start">
+                  <h3 class="m-0 pt-2 text-white">Github</h3>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                  <i class="fab fa-github fa-2x text-secondary"></i>
+                </div>
+              </div>
+            </a>
+            <a class="col-12 col-md-6 col-lg-3 mb-5 media_link btn" target="_blank" href="https://www.instagram.com/dj_astin_/">
+              <div class="row">
+                <div class="col-6 d-flex justify-content-start">
+                  <h3 class="m-0 pt-2 text-white">Instagram</h3>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                  <i class="fab fa-instagram fa-2x text-secondary"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script for coping mail to clipboard -->
+    <script src="Clipboard/clipboard.min.js"></script>
+    <script>
+      var clipboard = new ClipboardJS('.clip');
+  
+      clipboard.on('success', function(e) {
+          alert("My email has been successfully copied to your clipboard")
+          console.log("success")
+      });
+  
+      clipboard.on('error', function(e) {
+          alert("Failed to copy")
+          console.log("failure")
+      });
+    </script>
+  </body>
+</html>

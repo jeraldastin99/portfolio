@@ -1,0 +1,88 @@
+/* Global Properties */
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #17202A  ;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+/* Main Heading Font */
+.m-heading {
+  font-family: "Roboto Slab", serif;
+}
+.nav-link,.navbar-brand{
+  border: 2px solid transparent;
+  font-family: "Roboto Slab", serif;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #d9534f;
+  transition: 0.5s ease;
+}
+
+/* Main Container height*/
+.main-container {
+  height: 85vh;
+}
+
+/* Aligning items in main row */
+.main_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Changing Name Font sixe */
+.main_row h1 {
+  font-size: 4rem;
+}
+
+/* Making the main image the size of the screen */
+.main_row img {
+  width: 50vh;
+  height: 30rem;
+}
+
+/* About Section */
+.about {
+  background: #273746 ;
+  border-radius: 0.5rem;
+}
+
+#about p{
+  font-size: 1.3rem;
+}
+
+.card {
+  border-bottom: 8px solid #d9534f;
+}
+
+/* Social Media */
+#social-media {
+  background: #273746;
+}
+
+/* Add color to Social Media Links */
+.media_link {
+  padding: 1rem;
+  max-width: 15rem;
+  margin-left: 1rem;
+  border: 2px solid #d9534f;
+  border-radius: 0.5rem;
+}
+
+/* Hover effect */
+
+.media_link:hover{
+  background-color: #d9534f;
+}
+.maill{
+  background-color:#d9534f ;
+}
+.maill,.fas:hover{
+  background-color: aliceblue;
+  color:black;
+}
