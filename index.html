@@ -267,6 +267,24 @@
           alert("Failed to copy")
           console.log("failure")
       });
+      
+       //  Script for hiding menubar when scrolling  //
+      var prevScrollpos = window.pageYOffset;
+
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.querySelector(".navbar").style.top = "0";
+        } else {
+          document.querySelector(".navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+      
+      //  Script for collapsing again when menu item is clicked  //
+      $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
     </script>
   </body>
 </html>
