@@ -23,6 +23,10 @@ body{
   transition: 0.5s ease;
 }
 
+.navbar{
+  transition: top 0.3s;
+}
+
 /* Main Container height*/
 .main-container {
   height: 85vh;
